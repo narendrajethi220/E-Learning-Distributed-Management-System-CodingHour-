@@ -1,0 +1,109 @@
+.course-list {
+  /* border: 2px solid black; */
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.6rem;
+  background: white;
+  border-radius: 0.6rem;
+  box-shadow: 0 1.5rem 2.2rem rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.course-list h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  background: var(--color-bodybg);
+}
+.table tbody td button .pen {
+  background: var(--color-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+}
+.table tbody td button .del {
+  background: var(--color-danger);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+}
+.box {
+  position: fixed;
+  bottom: 0.6rem;
+  right: 1.5rem;
+  margin-bottom: 1.8rem;
+  padding: 0.3rem;
+  color: white;
+  /* border: 1px solid var(--color-bg1); */
+  border-radius: 0.5rem;
+  background: var(--color-primary);
+}
+.box:hover {
+  background: var(--color-white);
+  border: 2px solid var(--color-success);
+}
+
+/*------------------------------------------------- Search Course--------------------------------------------------------------- */
+
+.status {
+  color: black;
+  text-align: center;
+  /* margin-top: 1rem; */
+  padding-top: 1rem;
+  margin: 0.7rem;
+  padding-bottom: 0.5rem;
+  /* border: 2px solid black; */
+}
+.status-header {
+  /* border: 2px solid black; */
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+.status-subheader {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.status_form {
+  /* border: 5px solid var(--color-primary); */
+  padding: 1rem;
+  max-width: 40rem;
+  margin: auto;
+  background: var(--color-bg1);
+  border-radius: 0.5rem;
+  /* display: inline; */
+}
+.status-orderID {
+  display: inline;
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+}
+.status_form input[type="text"] {
+  width: 68%;
+}
+input {
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--color-white);
+  border: 2px solid var(--color-danger);
+  color: black;
+  font-weight: bold;
+}
+.btn-View {
+  /* border: 2px solid black; */
+  /* display: inline; */
+  background-color: #06b6d4;
+  border: #6c63ff;
+  color: white;
+  width: max-content;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+}
+.btn-View:hover {
+  background: var(--color-success);
+}

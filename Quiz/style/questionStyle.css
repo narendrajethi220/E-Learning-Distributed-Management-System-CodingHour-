@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --green: #16ff00;
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif;*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  height: 50vh;
+}
+
+.quiz {
+  max-width: 50%;
+  margin: 10rem auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: var(--blue);
+}
+
+.container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container-head h1 {
+  font-size: 24px;
+  color: var(--blue);
+}
+
+.container-body h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+}
+
+.option label {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option label:hover {
+  background-color: #eee;
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--green);
+  color: var(--white);
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0077b6;
+}
+
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .container-head h1 {
+    font-size: 20px;
+  }
+
+  .option label {
+    padding: 8px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #3eb489;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: #961316;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.65);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+  --color-quote: #0f172a;
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+  --color-cyan: #60a5fa;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  background: var(--color-white);
+  /* background: var(--color-quote); */
+  /* padding: 1rem; */
+}
+
+/* =================Navbar============== */
+nav {
+  background: var(--color-bg);
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  padding: 1.5rem 11.5rem 1rem 11.5rem;
+  /* displa none; */
+}
+nav .sub-head {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav .home_button {
+  text-decoration: none;
+}
+.nav_menu a {
+  color: white;
+}
+
+nav button {
+  color: white;
+}
+.window-scroll .nav_menu a {
+  color: white;
+}
+.btn-primary:hover {
+  background: #6c63ff;
+  color: white;
+}
+.window-scroll {
+  background: var(--color-bg1);
+  box-shadow: 0 1 rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.nav_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button {
+  display: none;
+}
+.nav_menu {
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: right;
+  gap: 3rem;
+}
+.nav_menu a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: var(--transition);
+  /* color: #000; */
+  text-decoration: none;
+}
+.nav_menu a:hover {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  color: var(--color-success);
+  text-decoration: underline;
+}
+
+.container {
+  width: 80%;
+  margin: 10rem auto;
+}
+
+.courses_box {
+  display: flex;
+  padding: 50px 0;
+
+  flex-wrap: wrap;
+}
+.courses_Notes {
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+  border-radius: 28px;
+}
+.courses-Notes_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+.courses-Notes_link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.courses-Notes_link:hover .courses-Notes_bg {
+  transform: scale(8);
+}
+.courses-Notes_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.courses-Notes_bg {
+  height: 128px;
+  width: 128px;
+  background-color: var(--color-cyan);
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.courses_Notes:nth-child(2n) .courses-Notes_bg {
+  background-color: #3ecd5e;
+}
+.courses_Notes:nth-child(3n) .courses-Notes_bg {
+  background-color: #e44002;
+}
+.courses_Notes:nth-child(4n) .courses-Notes_bg {
+  background-color: #952aff;
+}
+.courses_Notes:nth-child(5n) .courses-Notes_bg {
+  background-color: #cd3e94;
+}
+.courses_Notes:nth-child(6n) .courses-Notes_bg {
+  background-color: #4c49ea;
+}
+
+@media only screen and (max-width: 979px) {
+  .courses_Notes {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .courses-Notes_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .courses_Notes {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .courses-Notes_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .courses-Notes_link {
+    padding: 22px 40px;
+  }
+}

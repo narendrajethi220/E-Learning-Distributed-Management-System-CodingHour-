@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #3eb489;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: #961316;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.65);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+  --color-quote: #0f172a;
+  --color-course1: #ef4444;
+  --color-course3: #0891b2;
+  --color-course2: #22c55e;
+  --color-body: #ecedefe9;
+  --color-bodybg: #e2e8f0;
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+}
+body {
+  /* background: var(--color-bodybg); */
+  background: whitesmoke;
+}
+
+/*==========================================================Sidebar========================================================================= */
+.header-title {
+  width: 100%;
+  background: var(--color-bg1);
+  /* padding: 0.5rem; */
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  /* border: 2px solid var(--color-bg); */
+  /* border-radius: 2rem; */
+  /* border-bottom: var(--color-bg); */
+}
+.logo img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  /* margin-bottom: 0rem; */
+  padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+  margin: 0.1rem;
+  /* background: white; */
+  /* border: 2px solid black; */
+}
+.logo img {
+  /* width: 3rem;
+  height: 3rem; */
+  border-radius: 20%;
+  background: white;
+  padding: 0.3rem;
+}
+.logo span {
+  /* border: 2px solid black; */
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+  padding: 1rem 1rem 0.5rem 0.9rem;
+  padding-top: 0.4rem;
+  color: var(--color-white) !important;
+  text-transform: uppercase;
+}
+nav {
+  /* border: 2px solid red; */
+  position: sticky;
+  top: 0;
+  border-radius: 2rem;
+  bottom: 0;
+  height: 99vh;
+  /* width: 4.7rem; */
+  width: 21rem;
+  left: 0;
+  background: #ecedefe9;
+  overflow: hidden;
+  transition: 1s;
+}
+nav:hover {
+  /* width: 21rem; */
+  transition: 1s;
+}
+
+.profile-pic {
+  /* border: 2px solid black; */
+  /* background-image: url("../images/studentsImg/Narendra Singh Jethi.png"); */
+  /* background-size: contain; */
+  width: 16rem;
+  height: 16rem;
+  /* padding: 7rem; */
+  margin: 1rem 1rem 1rem 1.5rem;
+  border-radius: 2rem 5em 10%;
+}
+
+nav a {
+  position: relative;
+  width: 21rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  display: table;
+  padding: 0.4rem;
+}
+
+nav .fas,
+.fab {
+  border-radius: 50%;
+  position: relative;
+  width: 4rem;
+  height: 2.5rem;
+  top: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+nav .sidebar-head {
+  color: var(--color-bg2);
+  /* width: 21rem; */
+  font-size: 1.6rem;
+}
+
+.sidebar-item {
+  position: relative;
+  top: 0.8rem;
+  margin-left: 0.2rem;
+  text-align: center;
+}
+/* a:not(:first-of-type):nth-of-type(n+2):hover */
+
+nav a:hover {
+  background: var(--color-white);
+  /* color: white; */
+  color: var(--color-primary);
+}
+
+a:hover i {
+  color: var(--color-success);
+  transition: 0.5s;
+}
+
+nav .link-active {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+nav .link-active i {
+  color: var(--color-success);
+}
+nav .logout {
+  /* border: 2px solid black; */
+  position: absolute;
+  bottom: 0px;
+}
+.container {
+  display: flex;
+}
+/* ========================== Container */
+
+/* ===========================================Student Profile */
+#warning {
+  background: var(--color-warning);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+#success {
+  background: var(--color-success);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+#danger {
+  background: var(--color-danger);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+/*============================================== Form  */
+.course-add {
+  /* border: 5px solid black; */
+  margin-top: 1.5rem;
+  width: 50%;
+  text-align: center;
+  /* background: white; */
+  border-radius: 2rem;
+}
+
+form {
+  width: 90%;
+  /* border: 2px solid red; */
+  height: 80%;
+  padding-top: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  background: white;
+  border-radius: 1rem;
+}
+#f_area {
+  height: 30vh;
+}
+
+textarea {
+  height: 15vh;
+}
+
+.form-group {
+  display: block;
+  margin: 0.5rem;
+}
+
+.form-display {
+  font-size: 1.2rem;
+  /* border: 2px solid blue; */
+  display: block;
+  width: 100%;
+  font-weight: bold;
+
+  /* margin: 0.5rem; */
+}
+.form-control {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem;
+  width: 80%;
+  /* border: 2px solid green; */
+  padding: 0.5rem;
+  font-weight: bold;
+  background: var(--color-bodybg);
+  border-radius: 0.5rem;
+  color: var(--color-bg1);
+}
+.form-control-file {
+  font-size: 1rem;
+  /* border: 2px solid yellow; */
+  margin: 1rem;
+
+  padding: 0.5rem;
+  padding-left: 10rem;
+  background: var(--color-bodybg);
+  border-radius: 0.5rem;
+}
+.btn-submit {
+  /* border: 2px solid violet; */
+  padding: 0.65rem 0.8rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  cursor: grab;
+  background: var(--color-success);
+  color: white;
+  font-weight: bold;
+}
+.btn-close {
+  /* border: 2px solid violet; */
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  background: var(--color-danger);
+  color: white;
+  font-weight: bold;
+}
+.img-thumbnail {
+  display: inline;
+  height: 25vh;
+  width: 60%;
+  border: 2px solid var(--color-primary);
+}

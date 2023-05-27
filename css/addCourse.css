@@ -1,0 +1,111 @@
+#warning {
+  background: var(--color-warning);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+#success {
+  background: var(--color-success);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+#danger {
+  background: var(--color-danger);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+/*============================================== Form  */
+.course-add {
+  /* border: 5px solid black; */
+  width: 50%;
+  text-align: center;
+}
+.course-add h1 {
+  color: white;
+  margin: 1.5rem;
+  /* border: 1px solid black; */
+  background: var(--color-primary);
+  border-radius: 0.5rem;
+}
+form {
+  width: 90%;
+  /* border: 2px solid red;s */
+  height: 90%;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  background: white;
+  border-radius: 1rem;
+}
+textarea {
+  height: 15vh;
+}
+.form-group {
+  display: block;
+  margin: 0.5rem;
+}
+
+.form-display {
+  font-size: 1.2rem;
+  /* border: 2px solid blue; */
+  display: block;
+  width: 100%;
+  font-weight: bold;
+
+  /* margin: 0.5rem; */
+}
+.form-control {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem;
+  width: 80%;
+  /* border: 2px solid green; */
+  padding: 0.5rem;
+  font-weight: bold;
+  background: var(--color-bodybg);
+  border-radius: 0.5rem;
+  color: var(--color-bg1);
+}
+.form-control-file {
+  font-size: 1rem;
+  /* border: 2px solid yellow; */
+  margin: 1rem;
+
+  padding: 0.5rem;
+  padding-left: 10rem;
+  background: var(--color-bodybg);
+  border-radius: 0.5rem;
+}
+.btn-submit {
+  /* border: 2px solid violet; */
+  padding: 0.65rem 0.8rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  cursor: grab;
+  background: var(--color-success);
+  color: white;
+  font-weight: bold;
+}
+.btn-close {
+  /* border: 2px solid violet; */
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  background: var(--color-danger);
+  color: white;
+  font-weight: bold;
+}
+.img-thumbnail {
+  display: inline;
+  height: 25vh;
+  width: 60%;
+  border: 2px solid var(--color-primary);
+}

@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #3eb489;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: #961316;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.65);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+  --color-quote: #0f172a;
+}
+/* 
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.stu-form-header {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--color-white);
+  /* text-decoration: underline; */
+}
+.span-header {
+  color: var(--color-warning);
+}
+p {
+  line-height: 1.5em;
+}
+
+.trigger {
+  background: #10213e;
+  color: #fff;
+  font-size: 22px;
+  padding: 10px 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 500ms;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper {
+  position: relative;
+  width: 50%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  transition: all 200ms;
+  padding: 1px;
+  border: 2px solid white;
+}
+
+.column {
+  width: 50%;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  background: var(--color-primary);
+}
+
+.details h1 {
+  color: white;
+}
+
+.signin,
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  background: #eee;
+  border: none;
+  padding: 12px 15px;
+  border: 2px;
+  margin: 8px 0;
+  width: 100%;
+  font-family: inherit;
+  color: black;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+input:focus {
+  outline-color: var(--color-success);
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 14px;
+  margin: 15px 0px;
+}
+
+.form-submit,
+.admin-form-submit {
+  background: var(--color-quote);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 12px 45px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 80ms ease-in;
+}
+
+.admin-form-submit:hover,
+.form-submit:hover {
+  background: var(--color-success);
+  transform: scale(1.1);
+}
+
+.signup .form-submit {
+  margin-top: 15px;
+}
+.admin-form-submit {
+  margin-top: 15px;
+}
+
+#signin,
+#signup {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+#signin:hover,
+#signup:hover {
+  text-decoration: underline;
+}
+.form-span {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.content {
+  background: var(--color-bg2);
+  color: #fff;
+  text-align: center;
+}
+
+.admin-span-header {
+  color: rgba(207, 21, 8, 0.805);
+}
+
+/* ================================Media Queries(Tablets)========================= */
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+/* =================================Media Queries(Phones)===================== */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 80%;
+    flex-direction: column-reverse;
+  }
+
+  .column {
+    width: 100%;
+  }
+  .close {
+    top: 0;
+    right: 10px;
+    margin: 0;
+  }
+}

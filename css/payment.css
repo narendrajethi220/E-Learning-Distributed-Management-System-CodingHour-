@@ -1,0 +1,131 @@
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #3eb489;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: #961316;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.65);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+  --color-quote: #0f172a;
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+  --color-cyan: #60a5fa;
+}
+
+nav {
+  background: var(--color-bg);
+}
+.nav_menu a {
+  color: white;
+}
+nav button {
+  color: white;
+}
+.window-scroll .nav_menu a {
+  color: white;
+}
+.btn-primary:hover {
+  background: #6c63ff;
+  color: white;
+}
+
+.status {
+  color: black;
+  text-align: center;
+  /* margin-top: 1rem; */
+  padding-top: 7rem;
+  margin: 0.7rem;
+  padding-bottom: 0.5rem;
+  /* border: 2px solid black; */
+}
+.status-header {
+  /* border: 2px solid black; */
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+.status-subheader {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.status_form {
+  /* border: 5px solid var(--color-primary); */
+  padding: 1rem;
+  max-width: 30rem;
+  margin: auto;
+  background: var(--color-bg2);
+  border-radius: 0.5rem;
+  /* display: inline; */
+}
+.status-orderID {
+  display: inline;
+  margin-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+}
+.status_form input[type="text"] {
+  width: 68%;
+}
+input {
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--color-white);
+  border: 2px solid var(--color-danger);
+  color: black;
+  font-weight: bold;
+}
+.btn-View {
+  /* border: 2px solid black; */
+  /* display: inline; */
+  background-color: #06b6d4;
+  border: #6c63ff;
+  color: white;
+  width: max-content;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+}
+.btn-View:hover {
+  background: var(--color-success);
+}
+
+/* ======================Print Receipt=========================== */
+.receipt-container {
+  border: 2px solid black;
+  width: 40%;
+  color: black;
+  text-align: center;
+  margin: auto;
+  background: #e0e7ff;
+}
+.payment-receipt {
+  /* border: 2px solid red; */
+  width: 80%;
+  margin: 2rem auto;
+}
+.table-bordered {
+  /* border: 2px solid blue; */
+  width: 100%;
+  margin: 1rem auto;
+}
+.btn-print {
+  background: var(--color-primary);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn-print:hover {
+  background-color: var(--color-success);
+  transition: 1s;
+}

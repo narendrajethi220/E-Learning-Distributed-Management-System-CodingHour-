@@ -1,0 +1,18 @@
+:root {
+  --color-bg1: #2e3267;
+}
+h1 {
+  /* font-family: 'Sigmar', cursive; */
+  font-family: "Carter One", cursive;
+  font-size: 50px;
+}
+body {
+  text-align: center;
+  background: white;
+}
+.thank {
+  /* border: 2px solid; */
+  text-align: center;
+  margin-top: 35vh;
+  color: var(--color-bg1);
+}

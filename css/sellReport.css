@@ -1,0 +1,87 @@
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #3eb489;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: #961316;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.65);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+  --color-quote: #0f172a;
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+  --color-cyan: #60a5fa;
+}
+
+.sell-list {
+  /* border: 2px solid black; */
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.6rem;
+  background: white;
+  border-radius: 0.6rem;
+  box-shadow: 0 1.5rem 2.2rem rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+#sub-head {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+}
+.input-date {
+  /* border: 2px solid black; */
+  margin: 2rem;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+}
+#para {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+#startdate {
+  background: var(--color-cyan);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#enddate {
+  background: var(--color-cyan);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#btn-submit {
+  /* border: 2px solid black; */
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-success);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+#btn-submit:hover {
+  padding: 0.6rem 1.1rem;
+  transition: 0.5s;
+}
+#span {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+#btn-danger {
+  cursor: pointer;
+  background: var(--color-bg2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}

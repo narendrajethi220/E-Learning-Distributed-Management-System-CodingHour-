@@ -1,0 +1,319 @@
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #3eb489;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: #961316;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.65);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+  --color-quote: #0f172a;
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+  --color-cyan: #60a5fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #fefefe;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+
+/* =======================================================Header Navbar============================================================= */
+
+.nav-header {
+  width: 100%;
+  height: 80px;
+  background: var(--color-bg1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.logo {
+  font-size: 2rem;
+  color: #fefefe;
+  font-weight: bold;
+}
+.hamburger {
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 1.3rem;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+.nav-bar ul li a:hover {
+  color: var(--color-bg1);
+  background: #fefefe;
+}
+.nav-bar ul li a.active {
+  color: var(--color-bg1);
+  background: #fefefe;
+}
+
+/* ===================================================End================================================================ */
+
+/* ===================================================Sub-head=========================================================== */
+.sub-head {
+  text-align: center;
+  /* border: 2px solid black; */
+  margin: 5rem 1rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  /* background: var(--color-primary); */
+  color: var(--color-bg);
+}
+
+/* ===============================menu button====== */
+.menu {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.btn {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 40%;
+  /* border: 2px solid black; */
+  background: var(--color-primary);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10%;
+  display: block;
+  text-align: center;
+}
+.btn:hover {
+  background: var(--color-success);
+  cursor: pointer;
+  font-size: 1.3rem;
+  width: 50%;
+  transition: 0.4s;
+}
+/* ===========================================================Container===================================================================== */
+/* .container {
+  font-size: 1.2rem;
+} */
+.start_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .container, */
+.info_box {
+  background: var(--color-quote);
+  color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  border-radius: 1rem;
+  /* line-height: 3rem; */
+  /* display: none; */
+}
+
+.info_box .info_title {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.info_box .info_list {
+  padding: 0.9rem 2.2rem;
+}
+.info_box .info_list .info {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.info_box .info_list .info span {
+  font-weight: bold;
+  color: var(--color-danger);
+}
+.info_box .buttons {
+  /* height: 60px; */
+  display: flex;
+  align-items: ceter;
+  justify-content: flex-end;
+  padding: 0 2rem;
+
+  border-top: 1px solid white;
+}
+
+.info_box .buttons button {
+  margin: 1rem 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+.info_box .buttons a {
+  margin: 1rem 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+/*=============================== Quiz Quit ===============================*/
+
+.info_box .buttons .quit {
+  background: gray;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.info_box .buttons .quit:hover {
+  background: var(--color-danger);
+}
+/* =========================== Continue =============================*/
+
+.info_box .buttons .continue {
+  background: var(--color-primary);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.info_box .buttons .continue:hover {
+  background: var(--color-success);
+}
+/* ===============================================Start Quiz Button========================================================================= */
+.start_btn button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  padding: 0.9rem 1.5rem;
+  outline: none;
+  border: 1px solid var(--color-bg1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===========================================================End============================================================== */
+
+/* ====================================Footer */
+footer {
+  /* border: 2px solid black; */
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  bottom: 0;
+  font-size: 1.5rem;
+  background: var(--color-bg1);
+  color: white;
+}
+
+/*=====================================================Quiz-Box==============================================================*/
+
+.quiz_box {
+  border: 2px solid black;
+  width: 50%;
+}
+
+/* ===================================================== Responsive Code==================================================================== */
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: var(--color-bg1);
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .nav-bar.active {
+    height: 450px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,236 @@
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #3eb489;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: #961316;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.65);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+  --color-quote: #0f172a;
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+  --color-cyan: #60a5fa;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: var(--color-white);
+  background: #cbd5e1;
+  /* padding: 1rem; */
+}
+
+/* ============================================================NAVBAR =======================================================================*/
+nav {
+  background: var(--color-bg1);
+  /* position: fixed; */
+  width: 10%;
+  /* margin: auto; */
+  top: 1rem;
+  /* left: 0; */
+  z-index: 11;
+  height: 3rem;
+  padding-top: 1rem;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  margin-top: 1rem;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+nav a h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+nav a h3:hover {
+  /* font-size: 1.4rem; */
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  margin-top: 1.5rem;
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  color: var(--color-success);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.container {
+  margin-top: 1rem;
+}
+
+header {
+  background-color: var(--color-bg);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+header span a {
+  text-decoration: none;
+  color: white;
+}
+header span a:hover {
+  color: var(--color-warning);
+  cursor: pointer;
+  background: var(--color-bg2);
+  transition: 0.4s;
+  padding: 11px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#line {
+  width: 100%;
+  margin: 1rem auto;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.latest_post {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--color-bg2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+  box-shadow: 0px 0px 20px rgba(5, 5, 5, 0.734);
+  background: var(--color-bg);
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 40px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--color-success);
+  padding: 14px 24px;
+  transition: 0.5s;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

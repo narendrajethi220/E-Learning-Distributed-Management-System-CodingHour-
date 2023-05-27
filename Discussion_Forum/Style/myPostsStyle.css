@@ -1,0 +1,131 @@
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #3eb489;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: #961316;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.65);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+  --color-quote: #0f172a;
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+  --color-cyan: #60a5fa;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  background: var(--color-white);
+  /* background: #cbd5e1; */
+  /* padding: 1rem; */
+}
+
+/* ============================================================NAVBAR =======================================================================*/
+nav {
+  background: var(--color-bg1);
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 5rem;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  /* margin-top: 0.5rem; */
+  text-decoration: none;
+  margin-left: 1rem;
+}
+nav a h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+nav a h3:hover {
+  font-size: 1.4rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li a {
+  margin-top: 1.5rem;
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+nav ul li a:hover {
+  background: white;
+  color: var(--color-success);
+  transition: 0.5s;
+  padding: 0.2rem;
+  border-radius: 15%;
+}
+
+/*================== Section ====================*/
+
+section {
+  margin-top: 6rem;
+  /* border: 2px solid blue; */
+  text-align: center;
+  padding: 1rem;
+  max-width: 100%;
+}
+section h2 {
+  font-size: 2rem;
+}
+
+/* ==================Table========================*/
+table {
+  border: 2px solid black;
+  width: 90%;
+  margin: auto;
+}
+
+table thead,
+tr,
+th,
+tbody,
+tr,
+td {
+  border-bottom: 2px solid black;
+}
+#sub-head2 {
+  color: var(--color-danger-variant);
+  font-size: 1.5rem;
+}
+.latest_post {
+  list-style-type: none;
+  color: var(--color-quote);
+  font-size: 1rem;
+}
+.table tbody td button .pen {
+  background: var(--color-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+}
+.table tbody td button .del {
+  background: var(--color-danger);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+}
+
+/*========================== button==================== */
+button i {
+  cursor: pointer;
+  margin: 0;
+}

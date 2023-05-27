@@ -1,0 +1,65 @@
+.course-container {
+  width: 80%;
+  margin: 5rem auto auto auto;
+  background-color: #fff;
+  padding: 1.2rem;
+  box-shadow: 0 0 10px rgba(94, 147, 226, 0.1);
+  color: black;
+}
+#course-img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#course-title {
+  font-size: 32px;
+  margin: 20px 0;
+}
+.course-description {
+  font-size: 18px;
+  margin: 1.2rem 0;
+}
+.course-duration {
+  font-size: 18px;
+  margin: 1.2rem 0;
+}
+.course-duration .duration {
+  font-weight: bold;
+  color: var(--color-bg1);
+}
+.price {
+  font-size: 24px;
+  color: #ff3e3e;
+  margin: 20px 0;
+}
+.original-price {
+  font-size: 16px;
+  color: #aaa;
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+.lesson {
+  font-size: 18px;
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.lesson #lesno {
+  font-weight: bold;
+}
+.buy-now-btn {
+  width: 10%;
+  display: block;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 2.2rem auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buy-now-btn:hover {
+  background-color: var(--color-success);
+}
