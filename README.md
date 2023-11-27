@@ -1,4 +1,5 @@
 # E-Learning-Distributed-Management-Systme-CodingHour-
+![Screenshot (548)](https://github.com/narendrajethi220/E-Learning-Distributed-Management-Systme-CodingHour-/assets/55850738/6fb1c5fd-851a-41f2-b10c-f5957e0bfc47)
 The E-Learning Distributed Management System, CodingHour, is a comprehensive online platform designed to facilitate the learning and practice of coding skills. Built using HTML, CSS, JS, AJAX, jQuery, PHP, and MySQL, this system offers a wide range of features to enhance the learning experience.
 # CodingHour - E-Learning Distributed Management System
 
@@ -66,9 +67,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any questions or inquiries, please contact the CodingHour team at narendrajethi220@gmail.com
 Feel free to customize this README file according to your project's specific requirements and additional details.
-Here I have included some screenshot of the project:
+Here I have included some screenshots of the project:
 
-![Screenshot (548)](https://github.com/narendrajethi220/E-Learning-Distributed-Management-Systme-CodingHour-/assets/55850738/6fb1c5fd-851a-41f2-b10c-f5957e0bfc47)
 ![Screenshot (570)](https://github.com/narendrajethi220/E-Learning-Distributed-Management-Systme-CodingHour-/assets/55850738/30bb2fcd-1a8d-4d9b-9881-601cdbbcef44)
 ![Screenshot (549)](https://github.com/narendrajethi220/E-Learning-Distributed-Management-Systme-CodingHour-/assets/55850738/f958b041-55e0-4b35-b620-85d07cd6999d)
 ![Screenshot (550)](https://github.com/narendrajethi220/E-Learning-Distributed-Management-Systme-CodingHour-/assets/55850738/f4c17ea6-adf5-4f44-a54b-564873df4006)
@@ -92,4 +92,3 @@ Here I have included some screenshot of the project:
 ![Screenshot (565)](https://github.com/narendrajethi220/E-Learning-Distributed-Management-Systme-CodingHour-/assets/55850738/6c9ac85c-0072-42c8-bbaf-ff26adf5779a)
 ![Screenshot (566)](https://github.com/narendrajethi220/E-Learning-Distributed-Management-Systme-CodingHour-/assets/55850738/00f0849a-a4ee-4485-8b2e-70c56807ddb9)
 ![Screenshot (567)](https://github.com/narendrajethi220/E-Learning-Distributed-Management-Systme-CodingHour-/assets/55850738/67b62aae-d701-4ae3-b036-2cbf973ade8d)
-![Screenshot (569)](https://github.com/narendrajethi220/E-Learning-Distributed-Management-Systme-CodingHour-/assets/55850738/19b58eca-8e16-4ad2-8412-734d0fc18e40)
